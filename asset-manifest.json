@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/denisknk/Select-Grids/static/css/main.a377a7ad.chunk.css",
+    "main.js": "/denisknk/Select-Grids/static/js/main.c1e257ea.chunk.js",
+    "main.js.map": "/denisknk/Select-Grids/static/js/main.c1e257ea.chunk.js.map",
+    "runtime-main.js": "/denisknk/Select-Grids/static/js/runtime-main.178a0c08.js",
+    "runtime-main.js.map": "/denisknk/Select-Grids/static/js/runtime-main.178a0c08.js.map",
+    "static/js/2.51f2f76f.chunk.js": "/denisknk/Select-Grids/static/js/2.51f2f76f.chunk.js",
+    "static/js/2.51f2f76f.chunk.js.map": "/denisknk/Select-Grids/static/js/2.51f2f76f.chunk.js.map",
+    "index.html": "/denisknk/Select-Grids/index.html",
+    "precache-manifest.c50e2d44df7dec0c84a2df23a82fd8f8.js": "/denisknk/Select-Grids/precache-manifest.c50e2d44df7dec0c84a2df23a82fd8f8.js",
+    "service-worker.js": "/denisknk/Select-Grids/service-worker.js",
+    "static/css/main.a377a7ad.chunk.css.map": "/denisknk/Select-Grids/static/css/main.a377a7ad.chunk.css.map",
+    "static/js/2.51f2f76f.chunk.js.LICENSE.txt": "/denisknk/Select-Grids/static/js/2.51f2f76f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.178a0c08.js",
+    "static/js/2.51f2f76f.chunk.js",
+    "static/css/main.a377a7ad.chunk.css",
+    "static/js/main.c1e257ea.chunk.js"
+  ]
+}
