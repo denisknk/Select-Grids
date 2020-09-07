@@ -68,7 +68,6 @@ class Table extends Component {
     }));
   }
   createUsersMatrix = (selected) => {
-    // console.log("selected", selected);
     const gridsToShow = [];
     for (let i = 0; i < this.state.usersObj.length; i++) {
       const user = [];
@@ -92,7 +91,6 @@ class Table extends Component {
   applyHandle = (selected) => {
     const gridsToShow = this.createUsersMatrix(selected);
     let width = "";
-    console.log("before if", selected.length);
     if (selected.length < 5 && selected.length > 1) {
       width += 100 / (selected.length - 1);
       width += "%";
@@ -103,8 +101,6 @@ class Table extends Component {
     if (selected.length > 4) {
       width += 100 / selected.length + "%";
     }
-    console.log(width);
-
     this.setState(() => ({
       tableHeader: selected,
       gridsToShow: gridsToShow,

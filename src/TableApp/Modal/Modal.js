@@ -12,7 +12,6 @@ class Modal extends Component {
         return el !== item;
       }),
     }));
-    // this.props.deleteFromHeader(item);
   };
   addToHeader = (item) => {
     const isInArray = this.state.selectedItems.includes(item);
@@ -21,11 +20,8 @@ class Modal extends Component {
         selectedItems: [...state.selectedItems, item],
       }));
     }
-
-    // this.props.addToHeader(item);
   };
   applyHandle = () => {
-    console.log(this.state.selectedItems);
     this.props.applyHandle(this.state.selectedItems);
   };
   inputHandle = (e) => {
@@ -33,7 +29,6 @@ class Modal extends Component {
     const showOnInput = this.props.availableGrids.filter((el) => {
       return el.toLowerCase().match(input);
     });
-    console.log(showOnInput);
     this.setState(() => ({
       availableGrids: showOnInput,
     }));

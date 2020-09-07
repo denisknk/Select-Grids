@@ -7,12 +7,8 @@ import ListItem from "./ListItem.js";
 class Modal extends Component {
   state = {
     availableGrids: this.props.availableGrids,
-    // value: "Search...",
   };
-  // handeDeleteClick = (e) => {
-  //   // deleteFromHeader
-  //   console.log(e);
-  // };
+
   applyHandle = () => {
     this.props.applyHandle();
     this.props.closeHandle();
@@ -39,13 +35,11 @@ class Modal extends Component {
                   type="text"
                   onChange={this.onInputChange}
                   value={this.state.value}
-                  // onfocus={(e) => ""}
                 />
               </form>
 
               <div className="modal_body_left">
                 {this.props.availableGrids.map((el) => {
-                  // console.log(this.props.availableGrids);
                   return (
                     <ListItem
                       item={el}
