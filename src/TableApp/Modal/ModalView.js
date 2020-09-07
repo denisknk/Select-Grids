@@ -19,10 +19,6 @@ class Modal extends Component {
   };
   onInputChange = (e) => {
     this.props.inputHandle(e);
-    // const input = e.target.value.toLowerCase();
-    // this.setState(() => ({
-    //   value: input,
-    // }));
   };
   render() {
     return (

@@ -7,8 +7,8 @@ class Modal extends Component {
   };
 
   deleteFromHeader = (item) => {
-    this.setState(() => ({
-      selectedItems: this.state.selectedItems.filter((el) => {
+    this.setState((state) => ({
+      selectedItems: state.selectedItems.filter((el) => {
         return el !== item;
       }),
     }));
@@ -17,8 +17,8 @@ class Modal extends Component {
   addToHeader = (item) => {
     const isInArray = this.state.selectedItems.includes(item);
     if (!isInArray) {
-      this.setState(() => ({
-        selectedItems: [...this.state.selectedItems, item],
+      this.setState((state) => ({
+        selectedItems: [...state.selectedItems, item],
       }));
     }
 

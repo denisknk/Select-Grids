@@ -72,7 +72,7 @@ class Table extends Component {
     const gridsToShow = [];
     for (let i = 0; i < this.state.usersObj.length; i++) {
       const user = [];
-      selected.map((elem) => {
+      selected.forEach((elem) => {
         return user.push(this.state.usersObj[i][elem]);
       });
       gridsToShow.push(user);
@@ -80,10 +80,14 @@ class Table extends Component {
     return gridsToShow;
   };
   deleteFromHeader = (remove) => {
-    this.state.toRemove.push(remove);
+    this.setState((state) => ({
+      toRemove: [...state.toRemove, remove],
+    }));
   };
   addToHeader = (add) => {
-    this.state.toAdd.push(add);
+    this.setState((state) => ({
+      toRemove: [...state.toAdd, add],
+    }));
   };
   applyHandle = (selected) => {
     const gridsToShow = this.createUsersMatrix(selected);
